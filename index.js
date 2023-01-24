@@ -200,3 +200,30 @@ let myDate=new Date();
 // console.log(myDate.getMinutes());
 // console.log(myDate.getHours());
 
+// DOM Manipulation
+let elem =document.getElementById('click');
+// console.log(elem);
+let elemClass =document.getElementsByClassName("container")
+// console.log(elemClass);
+// elemClass[0].style.background="Yellow";
+elemClass[0].classList.add("bg-primary")
+elemClass[0].classList.add("text-success")
+// console.log(elem.innerHTML);
+// console.log(elem.innerText);
+
+// console.log(elemClass[0],innerHTML);
+// console.log(elemClass[0],innerText) ;
+ TN =Document.getelemntByTagName('button')
+console.log(tn)
+createdElement=document.createElement('p');
+createdElement.innertext= "This is created paragraph";
+tn[0].appendChild(createdElement);
+createdElement2=document.createElement('b');
+createdElement2.innertext="This is a created bold"
+tn[0].replaceChild(createdElement2,createdElement);
+
+//Selecting using query
+sel =document.querySelector('.conatiner')
+console.log(sel)
+sel =document.querySelectorAll('.conatiner')
+console.log(sel)
