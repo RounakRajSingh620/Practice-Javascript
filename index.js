@@ -30,7 +30,7 @@ var marks = {
     shumbham: 58,
     raj: 56
 }
-console.log(marks);
+// console.log(marks);
 
 //boolean
 var a = true;
@@ -58,10 +58,10 @@ var arr = [1, 2, 3, 4, 5]
 
 var a = 100;
 var b = 10;
-console.log("The value of a+b is ", a + b);
-console.log("The value of a-b is ", a - b);
-console.log("The value of a*b is ", a * b);
-console.log("The value of a/b is ", a / b);
+// console.log("The value of a+b is ", a + b);
+// console.log("The value of a-b is ", a - b);
+// console.log("The value of a*b is ", a * b);
+// console.log("The value of a/b is ", a / b);
 
 // Assignment Operators
 var c = b;
@@ -143,9 +143,13 @@ else{
 console.log("End of ladder");
 */
 
-var arr = [1, 2.3, 4, 5, 6, 8];
+// var arr = [1, 23, 4, 5, 6, 8];
 // console.log(arr);
 // for(var i=0;i<arr.length;i++){
+//     if(i==2){
+//         // break;
+//         continue;
+//     }
 //     console.log(arr[i])
 // }
 
@@ -157,13 +161,42 @@ var arr = [1, 2.3, 4, 5, 6, 8];
 // ac++;
 // ac=ac+1;
 
-let j = 0;
+// let j = 0;
 // while(j<arr.length){
 //     console.log(arr[j]);
 //     j++;
 // }
 
-do {
-    console.log(arr[j]);
-    j++;
-} while (j < arr.length);
+// do {
+//     console.log(arr[j]);
+//     j++;
+// } while (j < arr.length);
+
+let myArr=["Fan", "Camera",34,null,true];
+// Array Methods
+console.log(myArr.Length)
+// myArr.pop();
+// myArr.push("harry")
+// myArr.shift()
+// const newLen=myArr.unshift("Harry")
+// console.log(newLen);
+// console.log(myArr);
+
+// Strings Methods
+let myString="Raunak is a good boy goood goood"
+// console.log(myString.length)
+// console.log(myString.indexOf("good"));
+// console.log(myString.lastIndexOf("a"));
+// console.log(myString.slice(1,5));
+d=myString.replace("Raunak","Raj");
+// d=d.replace("good","bad");
+// console.log(d,myString)
+
+//Dates in Js
+let myDate=new Date();
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getDay());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getHours());
+
