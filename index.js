@@ -172,7 +172,7 @@ console.log("End of ladder");
 //     j++;
 // } while (j < arr.length);
 
-let myArr=["Fan", "Camera",34,null,true];
+let myArr = ["Fan", "Camera", 34, null, true];
 // Array Methods
 console.log(myArr.Length)
 // myArr.pop();
@@ -183,17 +183,17 @@ console.log(myArr.Length)
 // console.log(myArr);
 
 // Strings Methods
-let myString="Raunak is a good boy goood goood"
+let myString = "Raunak is a good boy goood goood"
 // console.log(myString.length)
 // console.log(myString.indexOf("good"));
 // console.log(myString.lastIndexOf("a"));
 // console.log(myString.slice(1,5));
-d=myString.replace("Raunak","Raj");
+d = myString.replace("Raunak", "Raj");
 // d=d.replace("good","bad");
 // console.log(d,myString)
 
 //Dates in Js
-let myDate=new Date();
+let myDate = new Date();
 // console.log(myDate.getTime());
 // console.log(myDate.getFullYear());
 // console.log(myDate.getDay());
@@ -201,9 +201,9 @@ let myDate=new Date();
 // console.log(myDate.getHours());
 
 // DOM Manipulation
-let elem =document.getElementById('click');
+let elem = document.getElementById('click');
 // console.log(elem);
-let elemClass =document.getElementsByClassName("container")
+let elemClass = document.getElementsByClassName("container")
 // console.log(elemClass);
 // elemClass[0].style.background="Yellow";
 elemClass[0].classList.add("bg-primary")
@@ -213,17 +213,87 @@ elemClass[0].classList.add("text-success")
 
 // console.log(elemClass[0],innerHTML);
 // console.log(elemClass[0],innerText) ;
- TN =Document.getelemntByTagName('button')
+tn = document.getElementsByTagName('div')
 console.log(tn)
-createdElement=document.createElement('p');
-createdElement.innertext= "This is created paragraph";
+createdElement = document.createElement('p');
+createdElement.innertext = "This is created paragraph";
 tn[0].appendChild(createdElement);
-createdElement2=document.createElement('b');
-createdElement2.innertext="This is a created bold"
-tn[0].replaceChild(createdElement2,createdElement);
+createdElement2 = document.createElement('b');
+createdElement2.innertext = "This is a created bold"
+tn[0].replaceChild(createdElement2, createdElement);
 
 //Selecting using query
-sel =document.querySelector('.conatiner')
+sel = document.querySelector('.conatiner')
 console.log(sel)
-sel =document.querySelectorAll('.conatiner')
+sel = document.querySelectorAll('.conatiner')
 console.log(sel)
+
+function clicked() {
+    console.log('The button was clicked')
+}
+window.onload = function () {
+    console.log('The document was loaded')
+}
+
+// Events in JavaScript
+
+// firstContainer.addEventListener('click', function () {
+//     document.querySelectorAll('.container')[1].innerHTML = "<b>We have clicked</b>"
+//     console.log("Clickedd on Container")
+// })
+
+// firstContainer.addEventListener('mouseover', function () {
+//     console.log("Mouse on Container")
+// })
+
+// firstContainer.addEventListener('mouseout', function () {
+//     console.log("Mouse out of Container")
+// })
+
+let prevHTML = document.querySelectorAll('.container')[1].innerHTML
+firstContainer.addEventListener('mouseup', function () {
+    document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+    console.log("Mouse up when clicked on Container")
+})
+
+firstContainer.addEventListener('mousedown', function () {
+    document.querySelectorAll('.container')[1].innerHTML = "<b>We have Clicked</b>"
+    console.log("Mouse down when clicked on Container")
+})
+
+
+//Arrow Functions
+// function summ(a,b){
+    // return a+b;
+// }
+summ=(a,b)=>{
+    return a+b;
+}
+
+logIn= ()=>{
+    document.querySelectorAll('.container')[1].innerHTML="<b>Set timeout fired</b>"
+    console.log("I am your log")
+}
+
+// SetTimeout and setinterval
+
+// clr = setTimeout(logIn,3000);
+// clr = setInterval(logIn,3000);
+
+// use clearInterval(clr)/clearTimeout(clr) to cancel setInterval/setTimeout
+
+
+// JavaScript localStorage
+// localStorage.setItem('name','raunak')
+// loaclStorage
+// localStorage.getItem('name')
+//localStorage.removeItem('name')
+// localStorage.clear();
+
+// JSON
+obj = {name:"raunak",length:1,a:{this:'tha"t'}}
+jso=JSON.stringify(obj);
+console.log(typeof jso)
+console.log(jso)
+parsed=JSON.parse(`{"name":"raunak","length":1,"a":{"this":"that"}}`)
+console.log(parsed);
